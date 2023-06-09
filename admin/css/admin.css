@@ -1,0 +1,118 @@
+.new-item{
+    padding: 20px 10px;
+}
+
+.new-item .new-item-submit,
+.posts-wrapper .sort-submit-button{
+    border: 0;
+    background: rgb(2,143,189);
+    color: white;
+    height: 29px;
+    padding: 0 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.new-item .new-item-submit:hover,
+.posts-wrapper .sort-submit-button:hover{
+    background: rgb(87,87,196);
+}
+
+.posts-wrapper .delete{
+    background: red;
+}
+
+.posts-wrapper .delete:hover{
+    background: rgb(161,9,9);
+}
+
+.items-wrapper{
+    padding: 20px 10px;
+}
+
+.items-wrapper .menu-tabs a{
+    display: inline-block;
+    padding: 10px 15px;
+    background: lightgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.items-wrapper .menu-tabs a.active{
+    background: lightblue;
+}
+
+.posts-list{
+    padding: 20px 10px;
+}
+
+.posts-wrapper form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts-wrapper .col-3{
+    width: 31%;
+    padding: 10px;
+}
+
+.posts-wrapper .col-12{
+    width: 100%;
+    padding: 10px;
+}
+
+.posts-list .posts-wrapper .input-text{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.posts-list .posts-wrapper .farsi,
+.posts-list .posts-wrapper .pashto{
+    direction: rtl;
+}
+
+.posts-list .posts-wrapper .form-group{
+    position: relative;
+}
+
+.post-result-wrapper{
+    position: absolute;
+    background: white;
+    z-index: 9;
+    top: 35px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 95%;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.post-result-wrapper .post-return-result{
+    padding: 8px 0;
+    cursor: pointer;
+    margin-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+    transition: 0.1s all ease-in-out;
+}
+
+.post-result-wrapper .post-return-result:hover{
+    font-weight: bold;
+}
+
+.rtl .posts-wrapper .english{
+    direction: ltr;
+}
+
+@media screen and (max-width: 1076px){
+    .posts-wrapper .col-3{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .posts-wrapper .col-3{
+        width: 100%;
+    }
+}
